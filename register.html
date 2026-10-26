@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عضویت در کاوازد کلاب | ثبت‌نام</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body class="register-page">
+    <main class="register-wrapper">
+      <section class="register-card" aria-labelledby="register-title">
+        <header class="register-header">
+          <img
+            src="assets/img/kavazard_club_logo.webp"
+            alt="نشان رسمی کاوازد کلاب"
+            class="club-logo"
+          />
+          <h1 id="register-title">عضویت در کاوازد کلاب</h1>
+          <span class="meta"
+            >برای پیوستن به جمع رایدرها، اطلاعات زیر را با دقت تکمیل کنید.</span
+          >
+        </header>
+        <form class="register-form" action="/register" method="post">
+          <div class="formitem">
+            <label for="fullname">نام و نام خانوادگی</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              maxlength="60"
+              required
+              autocomplete="name"
+            />
+          </div>
+          <div class="formitem">
+            <label for="phonenum">شماره تماس</label>
+            <input
+              type="tel"
+              id="phonenum"
+              name="phonenum"
+              maxlength="11"
+              required
+              autocomplete="tel"
+            />
+          </div>
+          <div class="formitem">
+            <label for="age">سن خود را وارد کنید.</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="60"
+              required
+            />
+          </div>
+          <div class="formitem">
+            <label for="email">ایمیل خود را وارد کنید.</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              maxlength="60"
+              required
+              autocomplete="email"
+            />
+          </div>
+          <div class="formitem">
+            <label for="username">نام کاربری</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              maxlength="30"
+              required
+              autocomplete="username"
+            />
+          </div>
+          <div class="formitem">
+            <label for="password">رمز عبور</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              required
+              autocomplete="new-password"
+            />
+          </div>
+          <div class="formitem">
+            <label for="bikemodel">مدل موتورسیکلت خود را وارد کنید.</label>
+            <input type="text" id="bikemodel" name="bikemodel" maxlength="50" />
+          </div>
+          <div class="formitem">
+            <label for="city">شهر محل سکونت خود را بنویسید.</label>
+            <input type="text" id="city" name="city" maxlength="30" />
+          </div>
+          <div class="terms-group">
+            <label class="terms-option">
+              <input type="checkbox" id="terms" name="terms" required />
+              <span>قوانین کلوب و نکات ایمنی موتورسواری را می‌پذیرم.</span>
+            </label>
+          </div>
+          <button class="register-submit" type="submit">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text">تکمیل عضویت در کلوب</span>
+          </button>
+        </form>
+        <footer class="register-footer">
+          <p class="login-message">
+            قبلاً عضو شده‌اید؟
+            <a href="login.html">وارد شوید</a>
+          </p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

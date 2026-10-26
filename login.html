@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود به کاوازد کلاب | Kavazard Club</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body class="login-page">
+    <main class="login-wrapper">
+      <section class="login-card" aria-labelledby="login-title">
+        <header class="login-header">
+          <img
+            src="assets/img/kavazard_club_logo.webp"
+            alt="نشان رسمی کاوازد کلاب"
+            class="club-logo"
+          />
+          <h1 id="login-title">ورود به کاوازد کلاب</h1>
+          <span class="meta">پرتال اعضای جامعه موتورسواری</span>
+        </header>
+        <form action="/login" method="post" class="login-form">
+          <div class="formitem">
+            <label for="user-identifier">نام کاربری یا ایمیل</label>
+            <input
+              type="text"
+              id="user-identifier"
+              name="identifier"
+              maxlength="60"
+              required
+              autocomplete="username"
+            />
+          </div>
+          <div class="formitem">
+            <label for="password">رمز عبور</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              required
+              autocomplete="current-password"
+            />
+          </div>
+          <div class="form-actions-row">
+            <label class="remember-me">
+              <input type="checkbox" name="remember" id="remember" />
+              <span>مرا به خاطر بسپار</span>
+            </label>
+            <a href="forgot-password.html" class="forgot-link"
+              >فراموشی رمز عبور؟</a
+            >
+          </div>
+          <button type="submit" class="login-submit">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text">ورود به حساب</span>
+          </button>
+        </form>
+        <footer class="login-footer">
+          <p class="register-message">
+            هنوز عضو کلوب نشده‌اید؟
+            <a href="register.html">ثبت‌نام در کاوازد کلاب</a>
+          </p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
